@@ -1,0 +1,33 @@
+{
+  "name": "lawlink-india",
+  "version": "1.0.0",
+  "description": "A modern web application for finding lawyers and getting legal assistance in India",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "seed": "cd backend && node seedData.js",
+    "start": "cd backend && npm start"
+  },
+  "keywords": [
+    "legal",
+    "lawyer-finder",
+    "chatbot",
+    "india",
+    "react",
+    "nodejs",
+    "mongodb"
+  ],
+  "author": "LawLink India",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
